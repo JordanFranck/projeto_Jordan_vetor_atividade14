@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Vetores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Usando vetores</h1>
+
+  <form id="formulario">
+    <label for="numero">Digite um número:</label>
+    <input type="text" id="numero"><br>
+    <button type="button" id="add-btn" onclick="adicionarNumero()">Adicionar Número</button>
+    
+    <table id="tabelaNumeros">
+      <thead>
+        <tr>
+          <th>Números</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <button type="button" id="divide-values-btn" onclick="dividirValores()">Dividir Valores por 10</button>
+
+    <table id="tabelaValoresDivididos">
+      <thead>
+        <tr>
+          <th>Valores Divididos</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
