@@ -3,7 +3,7 @@ let vetorNumeros = [];
 // Função para adicionar número à tabela
 function adicionarNumero() {
   const numero = parseFloat(document.getElementById('numero').value.trim());
-  
+
   if (!isNaN(numero)) {
     vetorNumeros.push(numero);
 
@@ -13,6 +13,7 @@ function adicionarNumero() {
     celula.textContent = numero;
 
     document.getElementById('numero').value = '';
+    document.getElementById('numero').focus();
   } else {
     alert("Por favor, digite um número válido.");
   }
